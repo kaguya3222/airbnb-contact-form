@@ -78,10 +78,11 @@ function setCloseSubmitNotificationButtonEvents() {
 }
 
 function submitForm() {
-    formSubmitButton.disabled = true;
     formSubmitButton.innerHTML = `<div class="loader"></div>`;
+    isFormValid = true;
     validateForm();
     if (isFormValid) {
+        formSubmitButton.disabled = true;
         setDisabledStylesForInputs();
         formIsValid();
     }
@@ -124,7 +125,6 @@ function setDisabledStylesForInputs() {
 }
 
 function formIsValid() {
-    isSelectDisabled = true;
     formSubmitButton.innerHTML = `<div class="loader"></div>`
     setTimeout(() => {
         formSubmitButton.innerHTML = "Submit";
