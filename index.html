@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Contact form</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <img src="assets/svg/images/logo.svg" class="logo" alt="Logo"/>
+        <nav>
+            <span class="nav-item">How it works?</span>
+            <span class="nav-item">Browse</span>
+            <span class="nav-item">Research</span>
+            <span class="nav-item">About</span>
+            <span class="nav-item">Contacts</span>
+            <button type="button" class="nav-button nav-item primary-btn">Sign up</button>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <div class="submitted-block">
+            <img src="assets/svg/images/Illustration.svg" alt=""/>
+            <h3 class="submitted-notification bold-text">We received your message!</h3>
+            <p class="feedback-notification normal-text">Thanks for contacting us! We will get back to you ASAP</p>
+            <button type="button" class="close-submitted-block-btn bold-text">Great!</button>
+        </div>
+        <div class="contact-form-wrapper">
+            <h2 class="contact-header">Contact us</h2>
+            <form action="#" class="contact-form">
+                <div class="form-item">
+                    <div class="form-text-wrapper">
+                        <span class="form-label form-text bold-text">Subject</span>
+                    </div>
+                    <div class="input-block">
+                        <div class="input-rectangle"></div>
+                        <div class="custom-select-wrapper">
+                            <div class="custom-select form-input">
+                                <div class="triggered-custom-select">
+                                    <span>Work opportunities</span>
+                                    <img class="arrow" src="assets/svg/images/Arrow.svg" alt=""/>
+                                </div>
+                                <div class="custom-options">
+                                <span class="custom-option selected normal-text"
+                                      data-value="work opportunities">Work opportunities</span>
+                                    <span class="custom-option normal-text"
+                                          data-value="questions about product">Questions about product</span>
+                                    <span class="custom-option normal-text" data-value="cooperation">Cooperation</span>
+                                    <span class="custom-option normal-text" data-value="other">Other</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-text-wrapper">
+                        <label class="form-label form-text bold-text" for="name">Name</label>
+                        <span class="form-error form-text bold-text">Invalid name</span>
+                    </div>
+                    <div class="input-block">
+                        <div class="input-rectangle"></div>
+                        <input type="text" id="name" class="form-input normal-text" placeholder="Enter your name...">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-text-wrapper">
+                        <label class="form-label form-text bold-text" for="tel">Phone number</label>
+                        <span class="form-error form-text bold-text">Invalid phone number</span>
+                    </div>
+                    <div class="input-block">
+                        <div class="input-rectangle"></div>
+                        <input type="tel" id="tel" class="form-input normal-text"
+                               placeholder="Enter your phone number...">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-text-wrapper">
+                        <label class="form-label form-text bold-text" for="email">Email</label>
+                        <span class="form-error form-text bold-text">Invalid email</span>
+                    </div>
+                    <div class="input-block">
+                        <div class="input-rectangle"></div>
+                        <input type="email" id="email" class="form-input normal-text"
+                               placeholder="Enter your email address...">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-text-wrapper">
+                        <label class="form-label form-text bold-text" for="message">Message</label>
+                        <span class="form-error form-text bold-text">Please, write your message</span>
+                    </div>
+                    <div class="input-block message-block">
+                        <div class="input-rectangle"></div>
+                        <textarea id="message" class="form-input form-message normal-text"
+                                  placeholder="Your message..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="form-btn bold-text primary-btn">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="map">
+        <img src="assets/svg/images/map.svg" alt="" class="map-img"/>
+        <img src="assets/svg/images/Pointer.svg" alt="" class="map-pointer"/>
+    </div>
+
+    <div class="contacts">
+        <div class="contact-items">
+            <div class="contacts-item">
+                <div class="circle-icon">
+                    <img src="assets/svg/images/address.svg" alt=""/>
+                </div>
+                <span class="contacts-title">
+                        888 Brannan Street,<br> in San Francisco, California
+                    </span>
+            </div>
+            <div class="contacts-item">
+                <div class="circle-icon">
+                    <img src="assets/svg/images/tel.svg" alt=""/>
+                </div>
+                <span class="contacts-title">
+                        +1 (039) 032 03 84
+                    </span>
+            </div>
+            <div class="contacts-item">
+                <div class="circle-icon">
+                    <img src="assets/svg/images/email.svg" alt=""/>
+                </div>
+                <span class="contacts-title">
+                        info@airbnb.com
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/index.js" type="module"></script>
+</body>
+</html>
