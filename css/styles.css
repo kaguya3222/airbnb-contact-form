@@ -93,8 +93,8 @@ input:-webkit-autofill:active {
     z-index: 1;
     width: 416px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
-    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 8px 8px 0 0;
     left: 887px;
     top: 137px;
     right: 147px;
@@ -162,13 +162,14 @@ input:-webkit-autofill:active {
 }
 
 .primary-btn:hover {
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0 9px 0 rgba(0,0,0,0.75);
 }
 
 .form-btn {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
     width: 320px;
     height: 52px;
     font-size: 16px;
@@ -191,7 +192,8 @@ input:-webkit-autofill:active {
     height: 255px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
-    border-radius: 0px 8px 0px 0px;
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 0 8px 0 0;
 }
 
 .contact-items {
@@ -246,7 +248,7 @@ input:-webkit-autofill:active {
     display: none;
     width: 2px;
     background: #5A6BFF;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 0 0 8px;
 }
 
 .custom-select-wrapper {
@@ -279,7 +281,7 @@ input:-webkit-autofill:active {
 .custom-options {
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
-    box-shadow: 0px 15px 46px rgba(26, 26, 29, 0.12);
+    box-shadow: 0 15px 46px rgba(26, 26, 29, 0.12);
     border-radius: 4px;
     position: absolute;
     display: block;
